@@ -43,7 +43,7 @@ $router->group(['prefix' => 'uploads'], function () use ($router) {
 // Grupo de rotas para os produtos 
 $router->group(['prefix' => 'products'], function () use ($router) {
     // Rota para exibir todos os produtos
-    $router->get('/', 'ProductController@index');
+    $router->get('/all', 'ProductController@index');
     // Rota para exibir um produto
     $router->get('/{id}', 'ProductController@show');
     
